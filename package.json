@@ -1,0 +1,31 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "env-cmd -f ./config/dev.env node src/index",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/index -e js, html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SylviaGuo/NodeJS-Chat-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SylviaGuo/NodeJS-Chat-App/issues"
+  },
+  "homepage": "https://github.com/SylviaGuo/NodeJS-Chat-App#readme",
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "express": "^4.17.1",
+    "socket.io": "^3.0.4"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.6"
+  }
+}
